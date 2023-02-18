@@ -5,9 +5,9 @@
 
 namespace in
 {
-	bool yOrN(std::string text);
-	int integer(int minRange, int maxRange, std::string text);
-
+	bool yOrN(const std::string& text);
+	int integer(int minRange, int maxRange, const std::string& text);
+	void garbageVal(const std::string& text = "Enter 'x' to continue... ");
 }
 
 namespace error

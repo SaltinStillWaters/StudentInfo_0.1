@@ -6,6 +6,7 @@ namespace out
 	void welcome();
 	void menu();
 	void clrScrn();
+	void newLine(int len);
 }
 
 #endif // !U_OUTPUT_H

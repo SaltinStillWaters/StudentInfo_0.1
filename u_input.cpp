@@ -5,7 +5,7 @@
 
 namespace in
 {
-	bool yOrN(std::string text)
+	bool yOrN(const std::string& text)
 	{
 		while (true)
 		{
@@ -35,7 +35,7 @@ namespace in
 	}
 
 	
-	int integer(int minRange, int maxRange, std::string text)
+	int integer(int minRange, int maxRange, const std::string& text)
 	{
 		//Argument-error handling
 		if (minRange == maxRange)
@@ -76,6 +76,12 @@ namespace in
 		}
 	}
 
+	void garbageVal(const std::string& text)
+	{
+		std::string holder{};
+		std::cout << text;
+		std::getline(std::cin >> std::ws, holder);
+	}
 }
 
 namespace error

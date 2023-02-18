@@ -8,7 +8,19 @@ namespace out
 {
 	void welcome()
 	{
-		std::cout << config::welcome;
+		newLine(8);
+		std::cout << config::welcome << std::endl;
+		newLine(2);
+	
+		std::cout << std::flush;
+	}
+
+	void newLine(int len)
+	{
+		for (int x = 0; x < len; ++x)
+		{
+			std::cout << '\n';
+		}
 	}
 
 	void menu()
