@@ -13,7 +13,7 @@ int main()
 	std::cin >> holder;
 
 	out::clrScrn();
-
+	out::clrScrn();
 
 	//Menu Selection
 	bool isMenu = 1;
